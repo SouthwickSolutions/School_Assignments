@@ -1,0 +1,21 @@
+body{
+    background-image: url(../images/404_background.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+#gohome{
+    width: 287px;
+    height: 69px;
+    position: relative;
+    top: 563px;
+    left: 353px;
+}
+
+#punchamoose{
+    max-width: 287px;
+    height: 69px;
+    position: relative;
+    top: 493px;
+    left: 710px;
+}

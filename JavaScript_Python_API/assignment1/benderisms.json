@@ -1,0 +1,54 @@
+{
+    "benderisms":[
+        {
+            "answer": "This is the worst kind of discrimination there is: the kind against me!",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "I guess if you want children beatean, you have to do it yourself.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "Hahahahaha. Oh wait you're serious. Let me laugh even harder.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "I'll build my own theme park; with blackjack and hookers. In fact, forget the park.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "That's the closest thing to 'Bender is great' that anyone other than me has ever said.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "You know what cheers me up? Other people misfortune.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "Blackmail is such an ugly work. I prefer extortion. The 'x' makes it sound cool.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "Oh, your God!",
+            "style": "position:absolute;right:27%;top:43%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "Shut up baby, I know it!",
+            "style": "position:absolute;right:27%;top:43%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "answer": "I'm so embarassed, I wish everyone else was dead.",
+            "style": "position:absolute;right:27%;top:40%;font-size:125%;height:144px;width:200px;word-wrap:normal;"
+        },
+        {
+            "intro": "Who are you?"
+        },
+        {
+            "directions": "Just ask me whatever you want and make sure to pay up first."
+        },
+        {
+            "directions2": "Use the text entry box in the upper corner."
+        }
+     
+    ]
+}

@@ -1,0 +1,68 @@
+*{
+    font-family: 'Baloo Chettan', cursive;
+}
+
+body{
+    background-color: #fff8dc;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 95%;
+}
+
+#text{
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 95%;
+}
+
+#textBox{
+    width: 400px;
+    height: 25px;
+    font-size: 20px;
+}
+
+#todoBody{
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+}
+
+#bodyTable{
+    border: 1px solid black;
+    border-collapse: separate; /* allow spacing between cell borders */
+    border-spacing: 0 20px;
+}
+
+.header{
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.tableRow{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+td{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}

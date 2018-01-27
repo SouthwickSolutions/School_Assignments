@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Planet Express</title>
+    </head>
+    <body style="
+                 background-image: url(images/planet_express_outside.jpg); 
+                 background-size: 100% 100%; 
+                 background-repeat: no-repeat;">
+        <audio id="my_audio" src="audio/intro_jingle.mp3" loop="loop"></audio>
+        <script>window.onload = function() {
+                                    document.getElementById("my_audio").play();
+                                    setTimeout("window.location='./mainpage.html'",4750);
+                                }       
+        </script>
+    </body>
+</html>

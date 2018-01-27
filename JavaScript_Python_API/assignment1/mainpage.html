@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Benderisms</title>
+    </head>
+    <body style="
+                 background: url(images/planet_express_inside.jpg) no-repeat center center; 
+                 height: 540px;
+                 width: 1350px;
+                 background-repeat: no-repeat;">
+        
+        <div id="bender"></div>
+        <div id="textbubble"></div>
+        <div id="outputtext"></div>
+        <form id="questionform" style="display: none;">
+            <input type="text" name="question" id="question">
+            <input type="button" name="submitbutton" value="Get Benderism" onclick="getBenderism()">
+        </form>
+        <script>
+            var answer01 = ""; var style01 = ""; var answer02 = ""; var style02 = ""; var answer03 = ""; var style03 = ""; var answer04 = ""; var style04 = ""; var answer05 = ""; var style05 = ""; var answer06 = ""; var style06 = ""; var answer07 = ""; var style07 = ""; var answer08 = ""; var style08 = ""; var answer09 = ""; var style09 = ""; var answer10 = ""; var style10 = "";
+            var directions = "";
+            var directions2 = "";
+            var switchBender = true;
+            
+            fetch('https://api.myjson.com/bins/k7z81')
+                .then(
+                    function(response){
+                        response.json().then(function(data) {
+                            answer01 = data.benderisms[0].answer;
+                            style01 = data.benderisms[0].style;
+                            answer02 = data.benderisms[1].answer;
+                            style02 = data.benderisms[1].style;
+                            answer03 = data.benderisms[2].answer;
+                            style03 = data.benderisms[2].style;
+                            answer04 = data.benderisms[3].answer;
+                            style04 = data.benderisms[3].style;
+                            answer05 = data.benderisms[4].answer;
+                            style05 = data.benderisms[4].style;
+                            answer06 = data.benderisms[5].answer;
+                            style06 = data.benderisms[5].style;
+                            answer07 = data.benderisms[6].answer;
+                            style07 = data.benderisms[6].style;
+                            answer08 = data.benderisms[7].answer;
+                            style08 = data.benderisms[7].style;
+                            answer09 = data.benderisms[8].answer;
+                            style09 = data.benderisms[8].style;
+                            answer10 = data.benderisms[9].answer;
+                            style10 = data.benderisms[9].style;
+                            intro = data.benderisms[10].intro;
+                            directions  = data.benderisms[11].directions;
+                            directions2 = data.benderisms[12].directions2;
+                    });
+                }
+            )
+            window.onload = function() {
+                                    setTimeout(function(){ document.getElementById('bender').innerHTML =
+                                                         "<img src='images/bender5.png' style='position:absolute;right:0;top:45%;'>"},3000);
+                                    setTimeout(function(){ document.getElementById('textbubble').innerHTML =
+                                                         "<img src='images/introtextbubble.png' style='position:absolute;right:5%;top:50%;'>"},4750);
+                                    setTimeout(function(){ var currentdiv = document.getElementById('outputtext');
+                                                           currentdiv.setAttribute("style", "position:absolute;right:10%;top:53%;");
+                                                           currentdiv.innerHTML = intro;},4750);
+                                    setTimeout(function(){ 
+                                                            document.getElementById('bender').innerHTML = 
+                                                            "<img src='images/bender2.png' style='position:absolute;right:10%;top:45%;'>";
+                                                            document.getElementById('textbubble').innerHTML = 
+                                                            "<img src='images/textbubble1.png' style='position:absolute;right:20%;top:35%;'>";
+                                                            var currentdiv = document.getElementById('outputtext');
+                                                            currentdiv.setAttribute("style", "position:absolute;right:27%;top:41%;font-size:125%;height:144px;width:200px;word-wrap:normal;");
+                                                            currentdiv.innerHTML = directions;},8750);
+                                    setTimeout(function(){
+                                                            var currentdiv = document.getElementById('outputtext');
+                                                            currentdiv.setAttribute("style", "position:absolute;right:27%;top:43%;font-size:125%;height:144px;width:200px;word-wrap:normal;");
+                                                            currentdiv.innerHTML = directions2;
+                                                            document.getElementById('questionform').setAttribute("style","display:block;margin-top: 20px;")},12750);
+                            };
+            function getBenderism(){
+                var randomNumber = Math.floor(Math.random() * 10);
+                var arrayOfAnswers = [answer01, answer02, answer03, answer04, answer05, answer06, answer07, answer08, answer09, answer10];
+                var arrayOfStyles = [style01, style02, style03, style04, style05, style06, style07, style08, style09, style10];
+                var benderImage = document.getElementById('bender');
+                var words = document.getElementById('outputtext');
+                
+                if (switchBender) {
+                    switchBender = false;
+                    benderImage.innerHTML = "<img src='images/bender3.png' style='position:absolute;right:10%;top:43%;'>";
+                    document.getElementById('question').value="";
+                    words.setAttribute("style", arrayOfStyles[randomNumber]);
+                    words.innerHTML = arrayOfAnswers[randomNumber];
+                }else if (!switchBender) {
+                    switchBender = true;
+                    benderImage.innerHTML = "<img src='images/bender2.png' style='position:absolute;right:10%;top:43%;'>";
+                    document.getElementById('question').value="";
+                    words.setAttribute("style", arrayOfStyles[randomNumber]);
+                    words.innerHTML = arrayOfAnswers[randomNumber];
+                }
+                
+            };
+        </script>
+    </body>
+</html>
