@@ -5,3 +5,4 @@ Class was taken in Spring 2018. Some assignment instructions are given by the in
 ## Assignments
 * GeoQuiz - "Follow along" assignment from chapters 1-5 in the textbook.
 * Project01 - Assignment based on concepts learned from chapters 1-5. Modeled after the GeoQuiz assignment. An app with facts about the inner planets of the solar system
+* CriminalIntent - "Follow along" assignment from chapters 7-10 in the textbook.
